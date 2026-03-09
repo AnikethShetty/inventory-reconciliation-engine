@@ -7,6 +7,7 @@ The system processes product inventory and sales transaction data to reconcile s
 
 The application follows modular design principles and includes logging, error handling, and unit testing.
 
+---
 
 ## Business Problem
 
@@ -21,6 +22,7 @@ This system automates:
 • Stock status identification  
 • Sales reporting
 
+---
 
 ## Key Features
 
@@ -35,7 +37,9 @@ This system automates:
 ### 3. Inventory Reconciliation
 Final stock is calculated as:
 
+```
 final_stock = current_stock - total_quantity_sold
+```
 
 ### 4. Stock Status Detection
 
@@ -69,9 +73,11 @@ Metrics:
 - low_stock_products
 - out_of_stock_products
 
+---
 
 ## Project Structure
 
+```
 inventory_project
 │
 ├── data
@@ -95,7 +101,9 @@ inventory_project
 ├── inventory_reconciliation.csv
 ├── sales_summary.json
 └── README.md
+```
 
+---
 
 ## Technologies Used
 
@@ -106,6 +114,7 @@ inventory_project
 - Logging
 - Unit Testing (unittest)
 
+---
 
 ## Business Rules Implemented
 
@@ -130,6 +139,7 @@ The system handles:
 
 The application continues running without crashing.
 
+---
 
 ## Installation
 
@@ -142,8 +152,11 @@ https://www.python.org
 
 Run:
 
+```
 pip install pandas
+```
 
+---
 
 ## How to Run the Application
 
@@ -151,21 +164,29 @@ Open terminal in the project folder.
 
 Run:
 
+```
 cd src
 python main.py
+```
 
 Output files will be generated:
 
+```
 inventory_reconciliation.csv
 sales_summary.json
+```
 
+---
 
 ## Running Unit Tests
 
 Run the following command:
 
+```
 python -m unittest discover tests
+```
 
+---
 
 ## Edge Cases Handled
 
@@ -177,6 +198,7 @@ The system safely handles:
 - Missing sales data
 - Stock values going below zero
 
+---
 
 ## Author
 
@@ -184,6 +206,7 @@ Aniketh S. Shetty
 B.Tech Computer Science & Engineering  
 Srinivas University Institute of Engineering and Technology
 
+---
 
 ## License
 
